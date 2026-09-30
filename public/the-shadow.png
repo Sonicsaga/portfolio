@@ -1,0 +1,273 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient: Deep cinema blood crimson with dark ambient vignette -->
+    <radialGradient id="shadowBg" cx="50%" cy="42%" r="78%">
+      <stop offset="0%" stop-color="#E30613" />
+      <stop offset="30%" stop-color="#CC000E" />
+      <stop offset="65%" stop-color="#960009" />
+      <stop offset="88%" stop-color="#580004" />
+      <stop offset="100%" stop-color="#220001" />
+    </radialGradient>
+
+    <!-- Arm Core Shading -->
+    <linearGradient id="armGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#420002" />
+      <stop offset="25%" stop-color="#2A0001" />
+      <stop offset="60%" stop-color="#100000" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+
+    <!-- Muscle & Shadow Texture Gradient -->
+    <linearGradient id="muscleHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8A0009" stop-opacity="0.4" />
+      <stop offset="30%" stop-color="#2D0003" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#080000" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- Glistening Blood Stream Gradient -->
+    <linearGradient id="bloodStream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5E0004" />
+      <stop offset="50%" stop-color="#2E0002" />
+      <stop offset="100%" stop-color="#110000" />
+    </linearGradient>
+
+    <!-- Wet Blood Highlight -->
+    <linearGradient id="wetGlint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF1A2A" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#8A0008" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Film Grain Texture -->
+    <filter id="filmGrain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.08 0" />
+    </filter>
+
+    <!-- Grunge Distress Filter for Title -->
+    <filter id="distressTitle">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="4" result="grunge" />
+      <feDisplacementMap in="SourceGraphic" in2="grunge" scale="7" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <!-- ================= BACKGROUND ================= -->
+  <rect width="1200" height="1800" fill="url(#shadowBg)" />
+  <rect width="1200" height="1800" fill="#000000" opacity="0.1" />
+  <rect width="1200" height="1800" filter="url(#filmGrain)" />
+
+  <!-- ================= TOP LEFT CREDITS ================= -->
+  <g fill="#F4F1EA" font-family="'Plus Jakarta Sans', sans-serif" letter-spacing="0.32em">
+    <text x="75" y="85" font-size="16" font-weight="700">PSYCHO CREATIONS</text>
+    <text x="75" y="112" font-size="12" font-weight="500" letter-spacing="0.55em" opacity="0.85">P R E S E N T S</text>
+
+    <text x="110" y="330" font-size="14" font-weight="600" letter-spacing="0.4em" opacity="0.9">A FILM BY</text>
+    <text x="110" y="365" font-size="27" font-weight="800" font-family="'Cinzel', serif" letter-spacing="0.24em">NIKITH KUMAR M R</text>
+  </g>
+
+  <!-- ================= TOP RIGHT CREDITS ================= -->
+  <g fill="#F4F1EA" font-family="'Plus Jakarta Sans', sans-serif" text-anchor="end">
+    <text x="1130" y="355" font-size="14" font-weight="600" letter-spacing="0.35em" opacity="0.85">PRODUCED BY</text>
+    <text x="1130" y="390" font-size="24" font-weight="800" font-family="'Cinzel', serif" letter-spacing="0.22em">YASHWANTH Y S</text>
+
+    <g opacity="0.95" font-size="13" font-weight="600" letter-spacing="0.22em">
+      <text x="1130" y="455">CINEMATOGRAPHER / EDITOR /</text>
+      <text x="1130" y="480">FILM MAKER / AUDIO AND</text>
+      <text x="1130" y="505">SOUND ARTIST</text>
+    </g>
+    <text x="1130" y="540" font-size="24" font-weight="800" font-family="'Cinzel', serif" letter-spacing="0.22em">ADARSH R MOHITHE</text>
+  </g>
+
+  <!-- ================= LEFT SIDE VERTICAL TAGLINE ================= -->
+  <g fill="#F4F1EA" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" letter-spacing="0.45em" opacity="0.85">
+    <text x="175" y="650">S O M E</text>
+    <text x="175" y="695">H U N T S</text>
+    <text x="175" y="740">A R E</text>
+    <text x="175" y="785">N O T</text>
+    <text x="175" y="830">A B O U T</text>
+    <text x="175" y="875">P R E Y . . .</text>
+
+    <text x="175" y="965">B U T</text>
+    <text x="175" y="1010">A B O U T</text>
+    <text x="175" y="1055">T H E</text>
+    <text x="175" y="1100">D A R K .</text>
+  </g>
+
+  <!-- ================= RIGHT SIDE ACTORS ================= -->
+  <g fill="#F4F1EA" font-family="'Plus Jakarta Sans', sans-serif" text-anchor="end">
+    <text x="1130" y="780" font-size="15" font-weight="700" letter-spacing="0.35em" opacity="0.85">ACTORS</text>
+    <g font-size="18" font-weight="700" letter-spacing="0.25em" font-family="'Cinzel', serif">
+      <text x="1130" y="820">BHANU PRAKASH G</text>
+      <text x="1130" y="865">ROHAN</text>
+      <text x="1130" y="910">YASHWANTH</text>
+      <text x="1130" y="955">NIKITH</text>
+      <text x="1130" y="1000">NISARGA</text>
+      <text x="1130" y="1045">ADARSH</text>
+    </g>
+  </g>
+
+  <!-- ================= CENTRAL ELEMENT: BLEEDING ARM & HAND ================= -->
+  <g transform="translate(600, 0)">
+    <!-- Outer Arm Silhouette Shadow (Backdrop) -->
+    <path d="M-90,0 C-75,120 -52,220 -30,320 C-10,380 -5,440 -12,490 C-32,550 -78,600 -115,670 C-136,715 -150,770 -135,830 C-120,885 -75,950 -38,1020 C-18,1060 -6,1110 5,1160 C15,1210 25,1260 28,1295 C33,1250 46,1170 60,1100 C78,1010 118,920 140,840 C160,760 150,690 125,630 C95,560 70,490 58,410 C48,320 62,180 90,0 Z"
+          fill="#060001" />
+
+    <!-- Forearm Muscular Shading & Contours -->
+    <path d="M-82,0 C-68,120 -46,220 -25,320 C-6,380 0,440 -8,490 C-26,550 -70,600 -105,670 C-124,715 -136,770 -122,830 C-108,885 -66,950 -30,1020 C-12,1060 0,1110 10,1160 C18,1210 26,1260 28,1290 C32,1250 42,1170 54,1100 C70,1010 108,920 128,840 C146,760 138,690 115,630 C86,560 62,490 52,410 C42,320 56,180 82,0 Z"
+          fill="url(#armGrad)" />
+
+    <!-- Forearm Muscle Tendon Striations -->
+    <path d="M-35,180 Q-8,320 -5,470 Q-2,580 -45,700 Q-85,810 -55,920 Q-25,1020 12,1140"
+          stroke="#520005" stroke-width="28" fill="none" opacity="0.6" stroke-linecap="round" />
+    <path d="M-10,240 Q15,380 18,540 Q22,680 48,800 Q72,910 42,1030"
+          stroke="#220002" stroke-width="32" fill="none" opacity="0.85" stroke-linecap="round" />
+    <path d="M-2,600 Q20,740 38,880"
+          stroke="#7A000A" stroke-width="12" fill="none" opacity="0.45" stroke-linecap="round" />
+
+    <!-- Wet Skin Glistening Highlights on Forearm edge -->
+    <path d="M-70,50 Q-40,240 -18,450" stroke="#FF1A2B" stroke-width="2" fill="none" opacity="0.3" />
+    <path d="M70,80 Q50,280 40,430" stroke="#FF1A2B" stroke-width="2.5" fill="none" opacity="0.25" />
+
+    <!-- ================= DOUBLE BEADED BRACELET ================= -->
+    <g transform="translate(0, 445)">
+      <!-- Shadow Under Bracelet -->
+      <path d="M-92,0 Q-10,65 92,0 Q-10,40 -92,0" fill="#020000" opacity="0.9" />
+
+      <!-- Top Strand Beads -->
+      <circle cx="-86" cy="4" r="13.5" fill="#360003" stroke="#000" stroke-width="2"/>
+      <circle cx="-62" cy="17" r="14" fill="#6E0008" stroke="#000" stroke-width="2"/>
+      <circle cx="-34" cy="27" r="15" fill="#360003" stroke="#000" stroke-width="2"/>
+      <circle cx="-4" cy="31" r="15.5" fill="#94000C" stroke="#000" stroke-width="2"/>
+      <circle cx="26" cy="28" r="15" fill="#360003" stroke="#000" stroke-width="2"/>
+      <circle cx="56" cy="18" r="14" fill="#6E0008" stroke="#000" stroke-width="2"/>
+      <circle cx="82" cy="5" r="13.5" fill="#360003" stroke="#000" stroke-width="2"/>
+
+      <!-- Bead Highlights -->
+      <circle cx="-5" cy="27" r="4" fill="#FF2B3E" opacity="0.6" />
+      <circle cx="-63" cy="13" r="3.5" fill="#FF2B3E" opacity="0.4" />
+      <circle cx="55" cy="14" r="3.5" fill="#FF2B3E" opacity="0.4" />
+
+      <!-- Bottom Strand Beads -->
+      <circle cx="-76" cy="25" r="11.5" fill="#1A0001" stroke="#000" stroke-width="1.5"/>
+      <circle cx="-52" cy="38" r="12.5" fill="#580006" stroke="#000" stroke-width="1.5"/>
+      <circle cx="-22" cy="47" r="12.5" fill="#220002" stroke="#000" stroke-width="1.5"/>
+      <circle cx="8" cy="48" r="12.5" fill="#580006" stroke="#000" stroke-width="1.5"/>
+      <circle cx="38" cy="39" r="12.5" fill="#220002" stroke="#000" stroke-width="1.5"/>
+      <circle cx="66" cy="26" r="11.5" fill="#580006" stroke="#000" stroke-width="1.5"/>
+
+      <!-- Drips originating from bracelet beads -->
+      <path d="M-22,58 Q-22,120 -20,160 Q-18,120 -18,58 Z" fill="#3B0003" />
+      <path d="M10,60 Q12,140 14,190 Q16,140 16,60 Z" fill="#3B0003" />
+    </g>
+
+    <!-- ================= HAND & FINGERS REACHING DOWN ================= -->
+    <!-- Thumb (Left side) -->
+    <path d="M-115,770 C-148,800 -165,850 -155,895 C-144,940 -112,970 -90,975 C-106,920 -106,860 -95,810 Z" fill="#0A0001" />
+    <path d="M-140,840 C-145,870 -138,900 -125,920" stroke="#6E0008" stroke-width="6" fill="none" opacity="0.6" stroke-linecap="round" />
+
+    <!-- Index Finger -->
+    <path d="M-75,930 C-70,980 -55,1040 -40,1100 C-30,1140 -20,1185 -18,1215 C-15,1185 -24,1120 -35,1060 C-46,1000 -56,950 -56,930 Z" fill="#080001" />
+    <!-- Index Fingernail with pooled blood -->
+    <path d="M-22,1200 C-20,1210 -17,1215 -16,1215 C-15,1215 -17,1205 -20,1200 Z" fill="#8A000B" />
+
+    <!-- Middle Finger (Dominant Center Finger) -->
+    <path d="M-25,970 C-15,1040 0,1130 12,1210 C22,1260 28,1298 30,1302 C32,1298 32,1240 28,1180 C20,1110 5,1020 -5,970 Z" fill="#050000" />
+    <!-- Bloody Fingernail Highlight -->
+    <path d="M22,1275 C24,1290 27,1300 29,1302 C31,1300 31,1288 29,1275 Z" fill="#B40012" />
+    <ellipse cx="28.5" cy="1290" rx="2.5" ry="6" fill="#FF2B3E" opacity="0.6" />
+
+    <!-- Ring Finger -->
+    <path d="M25,950 C38,1020 55,1100 68,1170 C75,1210 78,1248 78,1252 C76,1242 70,1190 60,1130 C48,1060 35,990 28,950 Z" fill="#080001" />
+    <!-- Ring Fingernail -->
+    <path d="M74,1238 C76,1248 78,1252 79,1252 C79,1248 77,1240 75,1238 Z" fill="#8A000B" />
+
+    <!-- Pinky Finger -->
+    <path d="M65,880 C85,940 105,1005 115,1060 C120,1090 122,1120 122,1125 C120,1115 112,1075 100,1025 C88,970 72,915 65,880 Z" fill="#070001" />
+
+    <!-- Deep Creases, Knuckles and Shadow Lines on Palm/Back of Hand -->
+    <path d="M-60,780 Q-20,830 30,810 Q80,800 110,830" stroke="#1F0001" stroke-width="16" fill="none" opacity="0.9" stroke-linecap="round" />
+    <path d="M-75,850 Q-15,900 45,880" stroke="#140001" stroke-width="14" fill="none" opacity="0.9" stroke-linecap="round" />
+    <path d="M-45,950 Q0,980 50,960" stroke="#140001" stroke-width="12" fill="none" opacity="0.9" stroke-linecap="round" />
+
+    <!-- ================= THICK BLOOD COATING & DRIPPING RIVULETS ================= -->
+    <g fill="url(#bloodStream)">
+      <!-- Long Middle Finger Drip String extending downwards -->
+      <path d="M26,1300 Q29,1350 29,1400 Q29,1435 27,1460 Q31,1460 31,1400 Q31,1350 32,1300 Z" />
+      <!-- Middle finger falling blood droplets -->
+      <ellipse cx="28.5" cy="1475" rx="4" ry="5.5" fill="#1A0001" />
+      <ellipse cx="28.5" cy="1505" rx="3" ry="4" fill="#170001" />
+      <circle cx="28.5" cy="1530" r="2.2" fill="#140001" />
+
+      <!-- Index Finger Drip String -->
+      <path d="M-19,1210 Q-20,1260 -20,1300 Q-21,1325 -19,1340 Q-17,1325 -17,1300 Q-17,1260 -16,1210 Z" />
+      <ellipse cx="-18.5" cy="1352" rx="3.2" ry="4.5" fill="#1A0001" />
+      <circle cx="-18.5" cy="1375" r="2.2" fill="#140001" />
+
+      <!-- Ring Finger Drip String -->
+      <path d="M76,1250 Q78,1290 78,1325 Q77,1345 79,1360 Q81,1345 80,1325 Q80,1290 79,1250 Z" />
+      <ellipse cx="78.5" cy="1372" rx="3" ry="4" fill="#1A0001" />
+
+      <!-- Thumb Drip String -->
+      <path d="M-92,970 Q-94,1030 -94,1070 Q-95,1090 -93,1100 Q-91,1090 -91,1070 Q-91,1030 -89,970 Z" />
+      <circle cx="-92.5" cy="1112" r="2.8" fill="#1A0001" />
+
+      <!-- Blood streams cascading along forearm and palm -->
+      <path d="M-5,540 Q0,620 12,700 Q18,740 16,770 Q20,770 20,740 Q15,620 2,540 Z" />
+      <path d="M45,710 Q55,780 62,850 Q66,880 65,900 Q68,900 68,880 Q62,780 50,710 Z" />
+      <path d="M-30,730 Q-25,820 -20,910 Q-18,940 -16,940 Q-15,910 -22,820 Q-26,730 -30,730 Z" />
+      <path d="M5,860 Q12,950 18,1040 Q22,1070 20,1070 Q15,1040 8,950 Q2,860 5,860 Z" />
+    </g>
+
+    <!-- Bright Glint highlights on wet blood edges -->
+    <path d="M27,1305 Q29,1360 29,1410" stroke="#FF2B3E" stroke-width="1.5" fill="none" opacity="0.55" />
+    <path d="M-18,1215 Q-19,1270 -19,1310" stroke="#FF2B3E" stroke-width="1.5" fill="none" opacity="0.5" />
+    <path d="M77,1255 Q79,1300 79,1330" stroke="#FF2B3E" stroke-width="1.5" fill="none" opacity="0.5" />
+  </g>
+
+  <!-- ================= BOTTOM TITLE CLUSTER ================= -->
+  <!-- "THE" -->
+  <text x="600" y="1410" text-anchor="middle" font-family="'Cinzel', serif" font-size="34" font-weight="800" fill="#F4F1EA" letter-spacing="0.45em">
+    T H E
+  </text>
+
+  <!-- "SHADOW" - Monumental Distressed Title -->
+  <g filter="url(#distressTitle)">
+    <text x="600" y="1570" text-anchor="middle" font-family="'Cinzel', 'Bebas Neue', serif" font-size="160" font-weight="900" fill="#080001" stroke="#1F0002" stroke-width="4" letter-spacing="0.12em">
+      SHADOW
+    </text>
+  </g>
+
+  <!-- Dark Distressed Blood Splatters across the SHADOW text -->
+  <g fill="#050000">
+    <!-- Dripping cuts hanging from title letters -->
+    <path d="M280,1570 L283,1620 L287,1570 Z" />
+    <path d="M380,1570 L382,1605 L385,1570 Z" />
+    <path d="M490,1570 L493,1630 L497,1570 Z" />
+    <path d="M620,1570 L622,1615 L625,1570 Z" />
+    <path d="M770,1570 L773,1640 L777,1570 Z" />
+    <path d="M890,1570 L892,1610 L895,1570 Z" />
+  </g>
+
+  <!-- Human Silhouette standing inside the letter 'O' of SHADOW -->
+  <g transform="translate(738, 1495) scale(0.68)">
+    <path d="M-14,52 C-14,0 14,0 14,52 Z" fill="#750007" opacity="0.75"/>
+    <!-- Small human standing silhouette -->
+    <circle cx="0" cy="15" r="4.5" fill="#000000" />
+    <path d="M-5,22 L5,22 L7,55 L3,55 L2,38 L-2,38 L-3,55 L-7,55 Z" fill="#000000" />
+  </g>
+
+  <!-- Subtitle: HUNTING FROM THE DARK -->
+  <text x="600" y="1640" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700" fill="#F4F1EA" letter-spacing="0.45em" opacity="0.95">
+    H U N T I N G   F R O M   T H E   D A R K
+  </text>
+
+  <!-- Bottom Production Credit -->
+  <g fill="#F4F1EA" font-family="'Plus Jakarta Sans', sans-serif" text-anchor="middle" opacity="0.85">
+    <text x="600" y="1710" font-size="13" font-weight="700" letter-spacing="0.35em">
+      A PSYCHO CREATIONS PRODUCTION
+    </text>
+    <!-- Scratch line under production -->
+    <path d="M470,1725 Q600,1728 730,1725" stroke="#F4F1EA" stroke-width="1.5" fill="none" opacity="0.6"/>
+  </g>
+</svg>

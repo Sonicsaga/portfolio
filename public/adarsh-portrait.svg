@@ -1,0 +1,400 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1472B8" />
+      <stop offset="40%" stop-color="#3A95D2" />
+      <stop offset="70%" stop-color="#72BCE8" />
+      <stop offset="100%" stop-color="#B8DEFB" />
+    </linearGradient>
+
+    <!-- Palace Wall Ochre Gradient -->
+    <linearGradient id="palaceOchre" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E5B26E" />
+      <stop offset="50%" stop-color="#CFA05B" />
+      <stop offset="100%" stop-color="#B38644" />
+    </linearGradient>
+
+    <!-- Palace Shadow Ochre -->
+    <linearGradient id="palaceShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8F6327" />
+      <stop offset="100%" stop-color="#6E4A19" />
+    </linearGradient>
+
+    <!-- Palace Red Dome Gradient -->
+    <radialGradient id="redDomeGrad" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF3B56" />
+      <stop offset="35%" stop-color="#D91432" />
+      <stop offset="75%" stop-color="#9E081F" />
+      <stop offset="100%" stop-color="#5E000F" />
+    </radialGradient>
+
+    <!-- Golden Kalasha / Spire -->
+    <linearGradient id="goldSpire" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFE885" />
+      <stop offset="50%" stop-color="#F5B800" />
+      <stop offset="100%" stop-color="#9C6B00" />
+    </linearGradient>
+
+    <!-- Maroon Hoodie Gradient -->
+    <linearGradient id="hoodieGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#991530" />
+      <stop offset="25%" stop-color="#820D23" />
+      <stop offset="60%" stop-color="#630617" />
+      <stop offset="100%" stop-color="#3D000A" />
+    </linearGradient>
+
+    <!-- Hoodie Fold Shadow -->
+    <linearGradient id="hoodieFold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#360007" />
+      <stop offset="100%" stop-color="#700A1D" />
+    </linearGradient>
+
+    <!-- Skin Tone Gradient -->
+    <linearGradient id="skinGrad" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#E2B18E" />
+      <stop offset="45%" stop-color="#CF9772" />
+      <stop offset="85%" stop-color="#B07553" />
+      <stop offset="100%" stop-color="#8C5535" />
+    </linearGradient>
+
+    <!-- Sunglasses Lens Gradient -->
+    <linearGradient id="lensGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A1820" />
+      <stop offset="50%" stop-color="#2D1F38" />
+      <stop offset="100%" stop-color="#522D4F" />
+    </linearGradient>
+
+    <!-- Yellow Garden Flora Gradient -->
+    <linearGradient id="gardenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8C838" />
+      <stop offset="40%" stop-color="#C2A423" />
+      <stop offset="80%" stop-color="#8F7817" />
+      <stop offset="100%" stop-color="#2D4018" />
+    </linearGradient>
+  </defs>
+
+  <!-- ================= 1. SKY BACKGROUND ================= -->
+  <rect width="1000" height="700" fill="url(#skyGrad)" />
+
+  <!-- ================= 2. GRAND HERITAGE PALACE (MYSORE PALACE HOMAGE) ================= -->
+  <g id="palaceArchitecture" transform="translate(0, -20)">
+    <!-- Palace Main Massing -->
+    <!-- Center Pavilion Tower -->
+    <rect x="250" y="80" width="500" height="600" fill="url(#palaceOchre)" />
+    <!-- Center Tower Shadow Wings -->
+    <rect x="250" y="80" width="70" height="600" fill="url(#palaceShadow)" opacity="0.3" />
+    <rect x="680" y="80" width="70" height="600" fill="url(#palaceShadow)" opacity="0.2" />
+
+    <!-- Left Wing -->
+    <rect x="40" y="240" width="220" height="450" fill="url(#palaceOchre)" />
+    <!-- Right Wing -->
+    <rect x="740" y="240" width="220" height="450" fill="url(#palaceOchre)" />
+
+    <!-- Central Majestic Chhatri / Red Dome with Spire -->
+    <!-- Base drum -->
+    <rect x="420" y="55" width="160" height="50" fill="#E8BD7D" stroke="#A87737" stroke-width="2" />
+    <circle cx="450" cy="80" r="10" fill="#694314" />
+    <circle cx="500" cy="80" r="10" fill="#694314" />
+    <circle cx="550" cy="80" r="10" fill="#694314" />
+
+    <!-- Central Main Bulbous Red Dome -->
+    <path d="M420,60 C410,0 470,-45 500,-50 C530,-45 590,0 580,60 Z" fill="url(#redDomeGrad)" />
+    <!-- Dome Ribs -->
+    <path d="M500,-50 Q500,20 500,60" stroke="#FF546D" stroke-width="3" fill="none" opacity="0.6" />
+    <path d="M500,-50 Q460,15 440,60" stroke="#B00F25" stroke-width="2.5" fill="none" opacity="0.8" />
+    <path d="M500,-50 Q540,15 560,60" stroke="#FF758A" stroke-width="2.5" fill="none" opacity="0.8" />
+    <!-- Gold Kalasha (Spire) on top -->
+    <path d="M495,-50 L505,-50 L503,-90 L497,-90 Z" fill="url(#goldSpire)" />
+    <circle cx="500" cy="-90" r="6" fill="#FFE885" />
+    <line x1="500" y1="-96" x2="500" y2="-120" stroke="#FFE885" stroke-width="3" />
+
+    <!-- Left Flanking Red Dome -->
+    <path d="M260,110 C250,55 295,20 320,15 C345,20 390,55 380,110 Z" fill="url(#redDomeGrad)" />
+    <!-- Left Kalasha -->
+    <path d="M317,15 L323,15 L320,-30 Z" fill="url(#goldSpire)" />
+    <circle cx="320" cy="-30" r="4" fill="#FFE885" />
+
+    <!-- Right Flanking Red Dome -->
+    <path d="M620,110 C610,55 655,20 680,15 C705,20 750,55 740,110 Z" fill="url(#redDomeGrad)" />
+    <!-- Right Kalasha -->
+    <path d="M677,15 L683,15 L680,-30 Z" fill="url(#goldSpire)" />
+    <circle cx="680" cy="-30" r="4" fill="#FFE885" />
+
+    <!-- Small Corner Turret Domes -->
+    <path d="M750,225 C745,185 775,160 790,155 C805,160 835,185 830,225 Z" fill="url(#redDomeGrad)" />
+    <line x1="790" y1="155" x2="790" y2="125" stroke="#FFE885" stroke-width="2" />
+
+    <!-- Palace Arches & Balconies Grid (Upper tier) -->
+    <!-- Cornice -->
+    <rect x="240" y="110" width="520" height="20" fill="#996929" />
+    <rect x="235" y="130" width="530" height="15" fill="#C99B57" />
+
+    <!-- Upper Windows & Jali Lattice Arches -->
+    <g fill="#42290B">
+      <path d="M340,210 C340,165 370,165 370,210 Z" />
+      <path d="M400,210 C400,165 430,165 430,210 Z" />
+      <path d="M460,210 C460,160 540,160 540,210 Z" />
+      <path d="M570,210 C570,165 600,165 600,210 Z" />
+      <path d="M630,210 C630,165 660,165 660,210 Z" />
+
+      <!-- Balcony Railing Band -->
+      <rect x="250" y="215" width="500" height="15" fill="#87581D" />
+      <line x1="250" y1="220" x2="750" y2="220" stroke="#FFE885" stroke-width="2" stroke-dasharray="8 6" />
+
+      <!-- Middle Tier Windows -->
+      <path d="M330,320 C330,250 380,250 380,320 Z" />
+      <path d="M410,320 C410,250 460,250 460,320 Z" />
+      <path d="M480,320 C480,240 520,240 520,320 Z" />
+      <path d="M540,320 C540,250 590,250 590,320 Z" />
+      <path d="M620,320 C620,250 670,250 670,320 Z" />
+
+      <!-- Grand Center Arch Entrance Archway -->
+      <path d="M730,520 C730,330 830,330 830,520 Z" fill="#2E1B07" />
+      <path d="M170,520 C170,330 270,330 270,520 Z" fill="#2E1B07" />
+    </g>
+
+    <!-- White Ornate Victorian Lamp Post in Palace Courtyard (From Photo) -->
+    <g transform="translate(775, 340)">
+      <line x1="0" y1="0" x2="0" y2="240" stroke="#F4F1EA" stroke-width="7" />
+      <circle cx="0" cy="30" r="14" fill="#F4F1EA" />
+      <path d="M-25,15 Q0,-10 25,15" stroke="#F4F1EA" stroke-width="4" fill="none" />
+      <circle cx="-25" cy="15" r="9" fill="#FFFBE6" stroke="#D1CEB8" stroke-width="2" />
+      <circle cx="25" cy="15" r="9" fill="#FFFBE6" stroke="#D1CEB8" stroke-width="2" />
+      <circle cx="0" cy="-5" r="11" fill="#FFFBE6" stroke="#D1CEB8" stroke-width="2" />
+    </g>
+  </g>
+
+  <!-- ================= 3. FOREGROUND GARDEN & KERB (FROM PHOTO) ================= -->
+  <!-- Middle Ground Garden / Rose Bushes -->
+  <rect x="0" y="520" width="1000" height="90" fill="#3D5224" opacity="0.9" />
+  <!-- Distant flowers -->
+  <g fill="#C9384E" opacity="0.8">
+    <circle cx="60" cy="550" r="7" /><circle cx="120" cy="545" r="6" /><circle cx="200" cy="560" r="8" />
+    <circle cx="620" cy="555" r="7" /><circle cx="710" cy="548" r="8" /><circle cx="890" cy="552" r="7" />
+  </g>
+
+  <!-- Striped Green & White Kerb (Direct Detail from Original Photo) -->
+  <g transform="translate(0, 560)">
+    <!-- Alternating green/white kerb blocks -->
+    <rect x="0" y="0" width="1000" height="30" fill="#2E5C38" />
+    <g fill="#F4F1EA">
+      <rect x="20" y="0" width="60" height="30" />
+      <rect x="140" y="0" width="60" height="30" />
+      <rect x="260" y="0" width="60" height="30" />
+      <rect x="380" y="0" width="60" height="30" />
+      <rect x="500" y="0" width="60" height="30" />
+      <rect x="620" y="0" width="60" height="30" />
+      <rect x="740" y="0" width="60" height="30" />
+      <rect x="860" y="0" width="60" height="30" />
+    </g>
+  </g>
+
+  <!-- Lush Golden-Yellow Bush Forefield (Exactly as in Reference Photo) -->
+  <path d="M0,580 Q250,560 500,580 T1000,570 L1000,1500 L0,1500 Z" fill="url(#gardenGrad)" />
+  <!-- Dappled floral leaf textures in golden yellow field -->
+  <g fill="#F5DF5B" opacity="0.6">
+    <circle cx="80" cy="720" r="28" /><circle cx="150" cy="780" r="35" /><circle cx="40" cy="850" r="40" />
+    <circle cx="850" cy="700" r="32" /><circle cx="920" cy="760" r="42" /><circle cx="880" cy="860" r="48" />
+    <circle cx="780" cy="820" r="38" /><circle cx="120" cy="940" r="45" /><circle cx="900" cy="980" r="50" />
+  </g>
+  <!-- Green railing in foreground lower right/left -->
+  <path d="M-20,920 Q120,860 160,940" stroke="#0C6634" stroke-width="12" fill="none" opacity="0.9" />
+  <path d="M750,960 Q850,860 1020,800" stroke="#0C6634" stroke-width="14" fill="none" opacity="0.9" />
+  <path d="M760,980 Q880,950 1020,920" stroke="#0C6634" stroke-width="12" fill="none" opacity="0.9" />
+
+  <!-- ================= 4. ADARSH MOHITHE (PORTRAIT FIGURE) ================= -->
+  <!-- Figure Shadows on ground -->
+  <ellipse cx="460" cy="1480" rx="350" ry="80" fill="#171206" opacity="0.7" />
+
+  <!-- A. Maroon Hoodie Torso & Body -->
+  <g id="adarshHoodieTorso">
+    <!-- Main Body Mass -->
+    <path d="M210,870 
+             C240,680 320,600 370,590 
+             C410,585 530,585 570,590 
+             C630,605 700,690 730,870 
+             C760,1050 780,1260 760,1500 
+             L160,1500 
+             C150,1250 180,1050 210,870 Z" 
+          fill="url(#hoodieGrad)" />
+
+    <!-- Shoulder & Arm Left (Viewer's Left) -->
+    <path d="M210,870 C170,980 150,1130 140,1350 L320,1500 L300,1050 Z" fill="#47030F" opacity="0.4" />
+    <!-- Shoulder & Arm Right (Viewer's Right) -->
+    <path d="M730,870 C765,990 785,1150 770,1350 L640,1500 L650,1050 Z" fill="#2E0108" opacity="0.5" />
+
+    <!-- Maroon Hoodie Center Pocket & Folds -->
+    <path d="M260,1180 Q470,1230 680,1180 L700,1470 Q470,1500 240,1470 Z" fill="#69071A" stroke="#4A0210" stroke-width="3" />
+    <!-- Kangaroo Pocket Slits -->
+    <path d="M260,1180 L330,1360" stroke="#3D000A" stroke-width="5" />
+    <path d="M680,1180 L610,1360" stroke="#3D000A" stroke-width="5" />
+
+    <!-- Chest Branding / Small Badge (From Photo) -->
+    <rect x="595" y="760" width="22" height="26" rx="4" fill="#E8D5CE" opacity="0.9" />
+    <rect x="598" y="763" width="16" height="20" rx="3" fill="#1C181A" />
+    <text x="606" y="777" font-family="sans-serif" font-size="10" font-weight="900" fill="#E8D5CE" text-anchor="middle">R</text>
+
+    <!-- Hoodie Neck Opening & Deep Shadow Collar -->
+    <path d="M375,590 Q470,690 565,590 Q470,640 375,590 Z" fill="#2B0007" />
+    <!-- Inner Dark T-Shirt Peeking Out -->
+    <path d="M420,620 Q470,660 520,620 Q470,645 420,620 Z" fill="#0A0C0E" />
+
+    <!-- Hoodie Drawstrings -->
+    <!-- Left String -->
+    <path d="M410,615 Q425,740 455,870 Q458,885 452,895" stroke="#992940" stroke-width="6" stroke-linecap="round" fill="none" />
+    <rect x="448" y="890" width="8" height="15" rx="3" fill="#3D030F" />
+    <!-- Right String -->
+    <path d="M530,615 Q515,720 500,810 Q495,830 498,840" stroke="#992940" stroke-width="6" stroke-linecap="round" fill="none" />
+    <rect x="494" y="835" width="8" height="15" rx="3" fill="#3D030F" />
+
+    <!-- Hoodie Collar / Hood Fabric Around Neck -->
+    <!-- Left Hood Rolled Collar -->
+    <path d="M335,600 C330,650 380,670 420,630 C380,590 350,570 335,600 Z" fill="#800E24" stroke="#570414" stroke-width="2" />
+    <!-- Right Hood Rolled Collar -->
+    <path d="M605,600 C610,650 560,670 520,630 C560,590 590,570 605,600 Z" fill="#94142D" stroke="#570414" stroke-width="2" />
+  </g>
+
+  <!-- B. Neck & Throat -->
+  <g id="neck">
+    <path d="M425,560 L420,630 Q470,660 520,630 L515,560 Z" fill="url(#skinGrad)" />
+    <!-- Throat Shadow Under Jaw -->
+    <path d="M425,560 Q470,615 515,560 Q470,580 425,560 Z" fill="#693A1E" opacity="0.65" />
+    <path d="M465,585 Q470,620 475,585 Z" fill="#4D2711" opacity="0.4" />
+  </g>
+
+  <!-- C. Face, Jawline & Ears -->
+  <g id="headAndFace">
+    <!-- Left Ear -->
+    <path d="M340,470 C325,480 325,525 345,535 C355,540 360,520 355,490 Z" fill="#CF9772" stroke="#8C5535" stroke-width="1.5" />
+    <path d="M340,490 Q346,505 344,520" stroke="#8C5535" stroke-width="2" fill="none" />
+
+    <!-- Right Ear -->
+    <path d="M580,470 C595,480 595,525 575,535 C565,540 560,520 565,490 Z" fill="#B07553" stroke="#693A1E" stroke-width="1.5" />
+    <path d="M580,490 Q574,505 576,520" stroke="#693A1E" stroke-width="2" fill="none" />
+
+    <!-- Face Oval & Strong Jawline -->
+    <path d="M345,460 
+             C345,390 380,360 470,360 
+             C560,360 580,390 580,460 
+             C580,510 565,550 515,575 
+             C485,590 445,590 420,575 
+             C365,545 345,510 345,460 Z" 
+          fill="url(#skinGrad)" />
+
+    <!-- Natural Sunlight Highlight on Left Cheek / Nose (Sun coming from left) -->
+    <path d="M360,430 Q410,480 410,540 Q370,510 360,430 Z" fill="#FCE4D2" opacity="0.25" />
+
+    <!-- Chin Shadow -->
+    <path d="M430,570 Q470,585 500,570 Q470,575 430,570 Z" fill="#6E3D1F" opacity="0.7" />
+
+    <!-- Mouth & Lips -->
+    <!-- Subtle Confident Half-Smile -->
+    <path d="M425,535 Q465,542 505,532" stroke="#5E2C1A" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <!-- Upper Lip -->
+    <path d="M432,533 Q465,527 498,531 Q465,535 432,533 Z" fill="#9E5844" />
+    <!-- Lower Lip -->
+    <path d="M435,536 Q465,548 495,534 Q465,540 435,536 Z" fill="#B86F58" />
+    <!-- Philtrum -->
+    <line x1="463" y1="518" x2="463" y2="528" stroke="#8C5535" stroke-width="1.5" opacity="0.6" />
+
+    <!-- Nose -->
+    <path d="M460,460 L457,508 Q465,516 475,508 L470,460" fill="none" />
+    <!-- Nose Tip & Nostril Shadows -->
+    <path d="M445,508 Q465,516 485,507" stroke="#693A1E" stroke-width="2.5" fill="none" />
+    <circle cx="448" cy="506" r="3.5" fill="#4D2711" />
+    <circle cx="482" cy="505" r="3.5" fill="#4D2711" />
+    <!-- Bridge Highlight -->
+    <line x1="463" y1="460" x2="463" y2="500" stroke="#FFEFE6" stroke-width="3" stroke-linecap="round" opacity="0.4" />
+  </g>
+
+  <!-- D. Signature Dark Sunglasses (Exact Key Prop from Photo) -->
+  <g id="sunglasses">
+    <!-- Frame Bar -->
+    <!-- Top bridge bar -->
+    <path d="M330,442 Q465,446 595,438" stroke="#100E12" stroke-width="9" stroke-linecap="round" fill="none" />
+
+    <!-- Left Lens Frame (Thick Wayfarer / Modern Square Style) -->
+    <rect x="335" y="445" width="105" height="68" rx="14" fill="#0D0B10" stroke="#17141C" stroke-width="6" />
+    <!-- Left Lens (Gradient Tint with Purple/Magenta Rim Reflection from Photo) -->
+    <rect x="340" y="450" width="95" height="58" rx="10" fill="url(#lensGrad)" />
+    <!-- Lens Specular Glare -->
+    <path d="M346,456 L395,456 L375,500 L346,500 Z" fill="#FFFFFF" opacity="0.12" />
+    <line x1="345" y1="454" x2="425" y2="454" stroke="#FFF" stroke-width="2" opacity="0.3" stroke-linecap="round" />
+
+    <!-- Sunglasses Bridge -->
+    <rect x="438" y="452" width="46" height="12" rx="4" fill="#100E12" />
+
+    <!-- Right Lens Frame -->
+    <rect x="482" y="443" width="105" height="68" rx="14" fill="#0D0B10" stroke="#17141C" stroke-width="6" />
+    <!-- Right Lens -->
+    <rect x="487" y="448" width="95" height="58" rx="10" fill="url(#lensGrad)" />
+    <!-- Lens Specular Glare -->
+    <path d="M493,454 L542,454 L522,498 L493,498 Z" fill="#FFFFFF" opacity="0.12" />
+    <line x1="492" y1="452" x2="572" y2="452" stroke="#FFF" stroke-width="2" opacity="0.3" stroke-linecap="round" />
+
+    <!-- Sunglasses Temple Arms Going to Ears -->
+    <path d="M335,450 L342,475" stroke="#17141C" stroke-width="7" stroke-linecap="round" />
+    <path d="M587,446 L580,475" stroke="#17141C" stroke-width="7" stroke-linecap="round" />
+  </g>
+
+  <!-- E. Curly Black Textured Hair (Key Distinctive Feature from Photo) -->
+  <g id="curlyHair">
+    <!-- Base Hair Mass -->
+    <path d="M340,460 
+             C320,440 310,380 340,340 
+             C370,300 420,290 470,290 
+             C530,290 580,310 605,350 
+             C630,390 620,440 590,465 
+             C570,440 550,420 520,420 
+             C480,420 460,435 440,430 
+             C410,425 380,440 340,460 Z" 
+          fill="#121014" />
+
+    <!-- Voluminous Distinct Wavy Curls on Top and Forehead Fringe (From Photo) -->
+    <!-- Curls clustered around crown & forehead -->
+    <g fill="#17141A" stroke="#26222B" stroke-width="2">
+      <!-- Front Curls Fringe Over Forehead -->
+      <circle cx="370" cy="415" r="28" />
+      <circle cx="410" cy="405" r="32" />
+      <circle cx="450" cy="415" r="30" />
+      <circle cx="490" cy="400" r="32" />
+      <circle cx="530" cy="415" r="28" />
+      <circle cx="560" cy="430" r="22" />
+
+      <!-- Top Volume Curls -->
+      <circle cx="340" cy="350" r="36" />
+      <circle cx="375" cy="320" r="40" />
+      <circle cx="420" cy="295" r="42" />
+      <circle cx="475" cy="285" r="44" />
+      <circle cx="530" cy="295" r="42" />
+      <circle cx="575" cy="325" r="38" />
+      <circle cx="605" cy="370" r="32" />
+
+      <!-- Inner Layer of Tight Curls -->
+      <circle cx="400" cy="350" r="34" />
+      <circle cx="445" cy="340" r="38" />
+      <circle cx="495" cy="340" r="38" />
+      <circle cx="540" cy="355" r="34" />
+    </g>
+
+    <!-- Hair Highlights Caught by Mysore Sunlight (Golden Warm Sheen) -->
+    <g stroke="#4A413B" stroke-width="3" fill="none" opacity="0.6">
+      <path d="M370,320 Q390,300 410,325" />
+      <path d="M420,290 Q440,275 460,295" />
+      <path d="M475,280 Q500,265 520,285" />
+      <path d="M530,290 Q555,280 570,305" />
+      <path d="M390,380 Q410,365 425,385" />
+      <path d="M465,370 Q485,355 500,375" />
+    </g>
+  </g>
+
+  <!-- ================= 5. CINEMATIC LIGHT GRADING OVERLAY ================= -->
+  <!-- Warm sunlight cast across entire scene -->
+  <rect width="1000" height="1500" fill="#FF8800" opacity="0.04" mix-blend-mode="color" pointer-events="none" />
+  <!-- Subtle Vignette around outer edges -->
+  <radialGradient id="heroVignette" cx="50%" cy="50%" r="70%">
+    <stop offset="65%" stop-color="#000000" stop-opacity="0" />
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.4" />
+  </radialGradient>
+  <rect width="1000" height="1500" fill="url(#heroVignette)" pointer-events="none" />
+</svg>
